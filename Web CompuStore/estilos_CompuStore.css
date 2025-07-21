@@ -1,0 +1,399 @@
+@font-face{
+    font-family: 'personal';
+    src: url(./Archivos/Truculenta-VariableFont_opsz\,wdth\,wght.ttf) /* Fuente externa */
+}
+*{
+    font-family: 'personal'; /* invocar fuente */
+}
+.flotador-izquierdo{
+    float: left; /* flota a la izquierda  */
+}
+.flotador-derecho{
+    float: right; /* flota a la derecha */
+}
+.romper-flotador{
+    clear: both; /* Rompe el flotado, asegurando que los siguientes elementos no floten */
+}
+.encabezado {
+    width: 100%;
+    display: flex; /* define como un blpque */
+    align-items: center;
+    background-color: #3b6fac;
+}
+.img-presentacion{/* Imagen de cabecera*/
+    width: 150px;
+    padding: 5px;
+    margin-left: 20px;
+}
+.logo{/* Clase para el logo */
+    width: 50px;
+    padding-top: 5px;
+    margin-left: 200px;
+    border-radius: 50%; /* Hace que el logo sea redondo */
+}
+.flotador-derecho h1{/* Nombre de la página */
+    background-color: #fff;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+nav ul { /* Lista de navegación */
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-left: 240px;
+    padding: 0;
+}
+nav li a { /* Enlaces de navegación */
+    text-decoration: none;
+    color: #232323;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+}
+
+nav li:hover {  /* Efecto hover en los enlaces de navegación */
+    background-color: #fff;
+    display: flex;
+    border-radius: 5px;
+}
+.seccion-imagenes{/* Sección de imágenes */
+    margin-top: 10px;
+    width: 80%;
+    height: 310px;
+    padding: 2% 5%;
+    margin-left: 60px;
+    background-color: #22e5ff;
+}
+.seccion-imagenes-01{/* Imagen izquierda */
+    float: left;
+    width: 25%;
+    height: 300px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+.seccion-imagenes-02{ /* Imagen central */
+    float:left;
+    width: 30%;
+    height: 300px;
+    margin-left: 80px;
+    clip-path: circle(50% at 50% 50%);
+}
+.seccion-imagenes-03{ /* Imagen derecha */
+    float: right;
+    width: 30%;
+    height: 300px;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+.titulo-central{ /* Título central de la página */
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.1;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+.contenedor-productos { /* Contenedor de productos */
+    display: flex;
+    align-items: center; /* Alineación vertical */
+    gap: 20px; /* Espacio entre el h1 y el párrafo */
+}
+.titulo-productos{ /* Título de la sección de productos */
+    background-color: #78cff1;
+    width: 10%;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    border-radius: 5px;
+}
+.texto { /* Texto de la sección */
+    margin: 0;
+    font-size: 1rem;
+}
+
+.resaltado { /* Texto resaltado */
+    color: #4400ff;
+    font-weight: bold;
+}
+.seccion-productos{ /* Sección de productos */
+    width: 80%;
+    padding: 2% 10%;
+}
+
+.oferta-producto{ /* Oferta de producto */
+    width: 30%;
+    height: 400px;
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: justify;
+    padding-bottom: 1%;
+    float: left;
+    background-color: gainsboro;
+}
+
+.imagen-producto{ /* Imagen del producto */ 
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.titulo-producto{ /* Título del producto */
+    padding: 1% 5%;
+}
+
+.detalles-producto{ /* Detalles del producto */
+    padding: 1% 5%;
+}
+
+.boton-producto{ /* Botón del producto */
+    background-color: #22e5ff;
+    text-decoration: none;
+    color: #232323;
+    display: block;
+    text-align: center;
+    padding: 2% 0;
+    margin: 0 5%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.boton-producto:hover{ /* Efecto hover en el botón del producto */
+    background-color: #232323;
+    color: #22e5ff;
+}
+.zona-boton {/* Sección de ver mas ofertas para trabajar con las posiciones */
+    width: 10%;
+    clear: both;
+    position: relative;
+    height: 60px;
+    margin-right: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); /* Sombra del botón */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); /* Sombra del botón para navegadores webkit */
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); /* Sombra del botón para navegadores Mozilla */
+    float: inline-end;/* Indica que se va posicionar al final de la línea */
+}
+.ver-mas { /* Botón de ver más ofertas */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 12px 20px;
+    background-color: #ffbb22;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ver-mas:hover{ /* Efecto hover en el botón de ver más */
+    background-color: #232323;
+    color: #22e5ff;
+}
+.contenedor-servicios{ /* Contenedor de servicios */
+    clear: both;
+    display: flex;
+    align-items: center; /* Alineación vertical */
+    gap: 20px; /* Espacio entre el h1 y el párrafo */
+}
+.contenedor-servicios-a{    /* Contenedor de servicios A */
+    clear: both;
+    display: none;
+}
+.seccion-servicios{ /* Sección de servicios */
+    width: 80%;
+    height: 350px;
+    padding: 2% 10%;
+    background: url(../Imagen/fondo1.jpg);
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.servicio-disponible{   /* Servicio disponible */
+    width: 30%;
+    height: 340px;
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: justify;
+    padding-bottom: 1%;
+    float: left;
+    background-color: #fff;
+    margin-left: 15px;
+    padding: 0px 5px;
+}
+
+h4{ /* Título de servicio */
+    text-align: center;
+    margin: 0;
+    padding: 1% 5%;
+}
+.imagen-servicio{ /* Imagen del servicio */
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.visible1{
+    visibility: visible; /* Hace visible el elemento */
+}
+.visible2{
+    visibility: hidden; /* Hace invisible el elemento */
+}
+.visible3{
+    visibility: collapse; /* Hace colapsar el elemento */
+}
+.ubicacion-contacto{    /* Contenedor de ubicación y contacto */
+    width: 90%;
+    height: 350px;
+    padding: 2% 5%;
+    display: flex;
+    margin-bottom: 100px;
+}
+.ubicacion{     /* Ubicación */
+    width: 40%;
+    height: 450px;
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: justify;
+    padding-bottom: 1%;
+    float: left;
+    background-color: #fff;
+    margin-left: 15px;
+    padding: 0px 5px;  
+}
+.contenedor-ubicacion{ /* Contenedor de ubicación */
+    clear: both;
+    display: flex;
+    width: 100%;
+    align-items: center; /* Alineación vertical */
+    gap: 20px; /* Espacio entre el h1 y el párrafo */
+}
+.titulo-ubicacion{ /* Título de ubicación */
+    background-color: #78cff1;
+    width: 40%;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    border-radius: 5px;
+}
+.contacto{ /* Contenedor de contacto */
+    width: 40%;
+    height: 450px;
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: justify;
+    padding-bottom: 1%;
+    background-color: gainsboro; 
+    margin-left: 200px;
+    padding: 0px 5px;  
+}
+.titulo-contacto{/* Título de contacto */
+    background-color: #78cff1;
+    width: 40%;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    border-radius: 5px;
+}
+.contenedor-contacto{ /* Contenedor de contacto */
+    clear: both;
+    display: flex;
+    width: 100%;
+    align-items: center; /* Alineación vertical */
+    gap: 20px; /* Espacio entre el h1 y el párrafo */
+    border-bottom: 3px inset #22e5ff;
+}
+.form{ /* Formulario de contacto */
+	width: 80%;
+	float: right;
+	padding: 5px;;
+    margin-right: 70px; 
+    align-items: center; /* Alineación vertical */
+    
+}
+.nombre-formulario{ /* Nombre del formulario */
+	display: block;
+	color: #1a1919;
+}
+.entrada-formulario{ /* Entrada del formulario */
+	background-color: #fff;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #070707;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 2px;
+	color: #000; 
+}
+.boton-formulario{ /* Botón del formulario */
+    background-color: #22e5ff;
+    text-decoration: none;
+    color: #232323;
+    text-align: center;
+    padding: 2% 0;
+    margin: 0 5%;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 20%;
+}
+.boton-formulario:hover{    /* Efecto hover en el botón del formulario */
+    background-color: #232323;
+    color: #22e5ff;
+}
+.logo-pie { /* Logo en el pie de página */
+	width: 100px;
+    border-radius: 50%; /* Hace que el elemento sea redondo */
+}
+figure{ /* Figura para el logo en el pie de página */
+	display: flex;
+	justify-content: center;
+}
+.contenedor-pie-pagina{     
+	width: 100%;
+    height: 150px;
+	background-color: #000;
+	display: grid; /* Convierte el elemento en un contenedor de cuadrícula */
+	grid-template-columns:repeat(3, 1fr); /* define cómo se distribuyen las columnas dentro del grid */
+}
+.pie{ /* Pie de página */
+	width: 89%;
+	padding: 2% 5%;
+    color: #fff;
+}
+.pie a {  /* Enlaces en el pie de página */
+	text-decoration: none;
+}
+
+.redes-sociales {  /* Contenedor de redes sociales */
+	border: solid 1px #fff;
+	width: 17px;
+	height: 17px;
+	padding: 10px;
+	border-radius: 30px;
+}
+
+.pie-pagina-copyright{ /* Sección derechos de autor */
+	background-color: #22e5ff;
+	padding: 10px 10px;
+	text-align: center;
+	font-weight: bold;
+}
+.icono-casa { /* Estilo para el ícono de la casa */
+    position: fixed; /* Hace que el ícono permanezca en una posición fija en la pantalla */
+    bottom: 20px; /* Posición desde la parte inferior */
+    right: 20px; /* Posición desde la parte derecha */
+    width: 50px; /* Tamaño del ícono */
+    height: 50px;
+    z-index: 1000; /* Asegura que el ícono esté por encima de otros elementos */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+}
+
+.icono-casa img { /* Estilo para la imagen dentro del ícono */
+    width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: auto;
+    border-radius: 50%; /* Hace que el ícono sea redondo */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Agrega un efecto de sombra */
+    transition: transform 0.3s ease; /* Efecto de animación al pasar el cursor */
+}
+
+.icono-casa img:hover { /* Efecto al pasar el cursor sobre el ícono */
+    transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el cursor */
+}

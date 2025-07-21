@@ -1,0 +1,84 @@
+/* Tipografías y fondo general */
+body {
+font-family: 'Montserrat', sans-serif;
+background-color: #faf8f3;
+margin: 0;
+}
+
+.form-container {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+}
+
+/* Caja del formulario */
+.form-box {
+background-color: white;
+border-left: 12px solid #522a70;
+border-top: 4px solid #fbd050;
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+border-radius: 16px;
+padding: 2rem;
+max-width: 650px;
+width: 100%;
+}
+
+/* Encabezado */
+.header-box {
+margin-bottom: 1rem;
+}
+
+.title {
+font-family: 'Funny Note', cursive;
+font-size: 2.5rem;
+color: #522a70;
+margin: 0;
+}
+
+.logo-img {
+width: 60px;
+height: 60px;
+object-fit: contain;
+}
+.logo-img1 {
+    width: 150px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Subtítulo */
+.subtitle {
+font-size: 2.5rem;
+color: #222023;
+font-weight: bold;
+}
+
+/* Etiquetas */
+.form-label {
+font-weight: 600;
+color: #222023;
+}
+
+/* Inputs personalizados */
+.styled-input {
+border: 2px solid #fbd050 !important;
+border-radius: 12px;
+}
+
+/* Botones */
+.action-btn {
+background-color: #f29cb7;
+border: none;
+padding: 0.5rem 2rem;
+font-weight: bold;
+border-radius: 8px;
+color: #222023;
+min-width: 150px;
+}
+
+.action-btn:hover {
+background-color: #fbd050;
+color: #222023;
+}
