@@ -1,0 +1,136 @@
+/* Fuentes */
+@import url(' https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url(' https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #faf8f3;
+  color: #222023;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background-color: #faeadd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 4rem;
+    color: #522a70;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #fbd050;
+}
+
+.form-group input[type="file"] {
+  border: none;
+  padding: 0.5rem 0;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.checkbox-label input[type="checkbox"] {
+  accent-color: #fbd050;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-create {
+  background-color: #522a70;
+  color: white;
+}
+
+.btn-create:hover {
+  background-color: #fbd050;
+}
+
+.btn-cancel {
+  background-color: #f29cb7;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background-color: #fbd050;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-container {
+    margin: 1.5rem 1rem;
+    padding: 1.5rem;
+  }
+}
