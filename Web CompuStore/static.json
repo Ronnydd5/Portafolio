@@ -1,4 +1,6 @@
 {
   "root": "/",
-  "index_file": "CompuStore.html" 
+  "routes": {
+    "/**": "CompuStore.html"
+  }
 }
